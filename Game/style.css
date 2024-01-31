@@ -20,7 +20,6 @@ input{
 span{
     display: inline;
 }
-
 .block{
     margin: auto;
     margin-top: 10px;
@@ -39,32 +38,40 @@ span{
 
 }
 .image{
-    margin-right: auto;
     position: relative;
-    margin-left: 75px;
     animation-name: animal;
+    animation-direction: alternate-reverse;
     animation-duration:4s;
     animation-iteration-count: infinite;
 }
 .image1{
-    margin-right: 75px;
     position: relative;
-    padding-left: 50px;
-    margin-left: auto;
     animation-name: animal1;
+    animation-direction: alternate-reverse;
     animation-duration:4s;
     animation-iteration-count: infinite;
 }
 @keyframes animal {
     0% {left:0px; top:0px;}
-    50%{left:1024px;right:0px}
-    100%{left:0px;right:1024px}
+    50%{left:500px;right:0px}
+    100%{left:0px;right:500px}
 }
 
 @keyframes animal1 {
-    0% {left:0px; top:0px;}
-    50%{left:1024px;right:0px}
-    100%{left:0px;right:1024px}
+    0% {left:0px; right:0px;}
+    50%{right:-500px}
+    100%{left:-500px}
+}
+.left{
+    display: block;
+    margin-right: auto;
+}
+.right{
+    display: block;
+    margin-left: auto;
+
+
+
 }
 .header{
     width:auto;
